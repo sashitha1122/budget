@@ -1,28 +1,6 @@
 import React, { useState } from "react";
-import { useContext } from "react";
-import { AppContext } from "../context/AppContext";
-import { v4 as uuidv4 } from 'uuid';
 
 const AddExpenseFrom = () => {
-    const { dispatch } = useContext(AppContext);
-
-    const [name, setName] = useState('');
-    const [cost, setCost] = useState('');
-
-    const onSubmit = (event) => {
-        event.preventDefault();
-        
-        const expense = {
-            id: uuidv4(),
-            name: name,
-            cost: parseInt(cost),
-        };
-
-        dispatch({
-            type: 'ADD_EXPENSE',
-            payload: expense,
-        });
-    };
 
     return (
      <form onSubmit={onSubmit}>
