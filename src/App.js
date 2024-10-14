@@ -1,10 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Main from './pages/Main';
 import { ToastContainer } from 'material-react-toastify';
 import 'material-react-toastify/dist/ReactToastify.css';
 import Dashboard from './pages/Dashboard';
+import Budget from './pages/Budget';
 
 const router = createBrowserRouter([
   {
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
         path: "Main",
-        element: <Main />,
+        element: <Budget />,
   }
 ]);
 

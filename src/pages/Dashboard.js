@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { UserPlusIcon } from '@heroicons/react/16/solid';
 import money from '../Images/new2.jpg';
 import bott from '../Images/new4.webp';
+import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
+    const [name, setName] = useState("");
+    const navigate = useNavigate(); 
+
+    const handleSubmit = () => {
+        navigate('/Main', { state: { name } }); 
+    };
+
     return (
         <div className="Dashboard">
             <div>
@@ -16,7 +24,6 @@ const Dashboard = () => {
                             </h1>
                         </div>
                         <div className="mt-3 pt-3">
-                            {/* Remove the Form wrapper if not needed */}
                             <input
                                 type="text"
                                 name="userName"
@@ -24,12 +31,14 @@ const Dashboard = () => {
                                 placeholder="What is your name?"
                                 aria-label="Your Name"
                                 autoComplete="given-name"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
                             />
                             <div className="mt-3">
-                                <Link to={'/Main'} className="btn btn-dark">
+                                <button className="btn btn-dark" onClick={handleSubmit}>
                                     <span>Create Account</span>
                                     <UserPlusIcon width={18} />
-                                </Link>
+                                </button>
                             </div>
                         </div>
                     </div>
