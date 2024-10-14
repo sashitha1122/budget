@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ToastContainer } from 'material-react-toastify';
 import 'material-react-toastify/dist/ReactToastify.css';
 import Dashboard from './pages/Dashboard';
-import Budget from './pages/Budget';
+import Main from './pages/Main';
 
 const router = createBrowserRouter([
   {
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
         path: "Main",
-        element: <Budget />,
+        element: <Main />,
   }
 ]);
 
