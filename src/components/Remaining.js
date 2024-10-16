@@ -1,9 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 const Remaining = () => {
     return (
-      <div className={`alert ${alertType} `}>
-         <span className="fs-4">Remaining:{budget - totalExpenses}.00 LKR</span>
+      <div className="d-flex justify-content-center">
+        <div className="mt-3 alert alert-danger" style={{width: '1390px'}}>
+          <span className="fs-4">Remaining :00LKR</span>
+        </div>
       </div>
     );
 };

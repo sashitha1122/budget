@@ -1,0 +1,22 @@
+[
+    {
+      "name" : "food",
+      "cost" : "200"
+    },
+    {
+        "name" : "lunch",
+        "cost" : "250"
+    },
+    {
+        "name" : "dinner",
+        "cost" : "150"
+    },
+    {
+        "name" : "reload",
+        "cost" : "600"
+    },
+    {
+        "name" : "book",
+        "cost" : "400"
+    }
+]

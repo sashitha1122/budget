@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { TiDelete } from 'react-icons/ti';
 
 
@@ -10,7 +10,7 @@ const ExpenseItem = (props) => {
            <span className='badge bg-primary rounded-pill me-3 fs-6'>
                 {props.cost}.00
             </span>
-            <TiDelete size='1.6em' onClick={handleDeleteExpense}></TiDelete>
+            <TiDelete size='1.6em'></TiDelete>
            </div>
         </li>
     );
