@@ -16,7 +16,7 @@ const Dashboard = () => {
     return (
         <div className="Dashboard">
             <div>
-                <div className="d-flex justify-content-center align-items-center w-100" style={{ height: '50vh' }}>
+                <div className="d-flex justify-content-center align-items-center w-100" style={{ height: '65vh' }}>
                     <div className="col-sm-3">
                         <div className="mt-3">
                             <h1>
@@ -35,9 +35,9 @@ const Dashboard = () => {
                                 onChange={(e) => setName(e.target.value)}
                             />
                             <div className="mt-3">
-                                <button className="btn btn-dark" onClick={handleSubmit}>
-                                    <span>Create Account</span>
-                                    <UserPlusIcon width={18} />
+                                <button className="btn btn-dark mx-auto mx-3" onClick={handleSubmit}>
+                                    <span >Create Account </span>
+                                    <UserPlusIcon className='' width={17} />
                                 </button>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div className="mt-3">
-                    <img src={bott} alt="bottom" width={1590} height={350} />
+                    <img src={bott} alt="bottom" width={1280} height={270} />
                 </div>
             </div>
         </div>
